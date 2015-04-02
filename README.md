@@ -2,7 +2,7 @@
 
 Revive.el  saves current editing  status including  the window
 splitting   configuration,   which   can't   be   recovered   by
-`desktop.el' nor by `saveconf.el', into a file  and reconstructs
+'desktop.el' nor by 'saveconf.el', into a file  and reconstructs
 that status correctly.
 
 ## Installation
@@ -22,9 +22,9 @@ And define favorite keys to those functions.  Here is a sample.
 
 ## How to use
 
-Call `save-current-configuration' (`C-x S' if you define key as
+Call 'save-current-configuration' with C-x S if you define key as
 above) when  you want to   save current editing status  and call
-`resume' to restore it.  Numerical prefix  arg to them specifies
+'resume' to restore it.  Numerical prefix  arg to them specifies
 the buffer number in which the editing status will be saved.
 
 ### Sample Operations
@@ -40,7 +40,7 @@ and revive:save-variables-local-default.  If you want to save other
 global/local variables, define them in
 revive:save-variables-global-private or
 revive:save-variables-local-private in a form of a list.  If you
-are using `gmhist', the next expression in ~/.emacs is useful.
+are using 'gmhist', the next expression in ~/.emacs is useful.
 
     (setq revive:save-variables-global-private
       '(file-history buffer-history minibuffer-history))
@@ -120,3 +120,6 @@ Comments  and bug   reports  are welcome. Don't  hesitated  to
 report.  My possible e-mail address is following:
 
  yuuji@gentei.org
+
+# Origin
+http://www.gentei.org/~yuuji/software/revive.el
